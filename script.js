@@ -3,7 +3,6 @@ function greetUser() {
   const nameInput = document.getElementById("nameInput");
   const outputDiv = document.getElementById("output");
   const clickCounter = document.getElementById("clickCounter");
-  const body = document.body;
   const name = nameInput.value.trim();
 
   clickCount++;
@@ -13,9 +12,9 @@ function greetUser() {
     outputDiv.style.color = "red";
   } else {
     outputDiv.innerText = `Hello, ${name}!`;
-    outputDiv.style.backgroundColor = "#222"
-    outputDiv.style.borderRadius = "10px"
-    outputDiv.style.padding = "20px"
+    outputDiv.style.backgroundColor = "#222";
+    outputDiv.style.borderRadius = "10px";
+    outputDiv.style.padding = "20px";
   }
 
   clickCounter.innerText = `Button clicked: ${clickCount} times`;
